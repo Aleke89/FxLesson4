@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="523.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ls3.RegisterController">
+<AnchorPane stylesheets="style.css" prefHeight="523.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ls3.RegisterController">
    <children>
       <Label layoutX="58.0" layoutY="124.0" prefHeight="22.0" prefWidth="99.0" text="Classroom">
          <font>
@@ -19,7 +19,7 @@
             <Font name="Arial Rounded MT Bold" size="22.0" />
          </font>
       </Label>
-      <Button fx:id="btn_register" layoutX="267.0" layoutY="428.0" mnemonicParsing="false" onAction="#btn_register_clicked" text="Register">
+      <Button fx:id="btn_register" layoutX="267.0" layoutY="428.0" mnemonicParsing="false" onAction="#btn_register_clicked" stylesheets="@btn.css" text="Register">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
