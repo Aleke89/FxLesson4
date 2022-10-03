@@ -47,8 +47,10 @@ public class menu_Controller implements Initializable {
         maximize.setOnMouseClicked(event->{
            stage = (Stage)myPane.getScene().getWindow();
             if(stage.isMaximized()){
+
                 stage.setMaximized(false);
             }else{
+
                 stage.setMaximized(true);
             }
         });
