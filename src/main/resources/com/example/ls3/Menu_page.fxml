@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -21,7 +20,7 @@
                   <Pane layoutX="4.0" layoutY="-4.0" prefHeight="31.0" prefWidth="606.0" style="-fx-background-color: #065959;" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   <HBox layoutX="190.0" layoutY="-6.0" prefHeight="43.0" prefWidth="425.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="Dashboard">
+                        <Button fx:id="btn_dashboard_2" mnemonicParsing="false" onAction="#dashboard_clicked" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="Dashboard">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -32,7 +31,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="ADD">
+                        <Button fx:id="btn_add_2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#add_clicked" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="ADD">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -43,7 +42,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button layoutX="136.0" layoutY="10.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="Report">
+                        <Button fx:id="btn_report_2" layoutX="136.0" layoutY="10.0" mnemonicParsing="false" onAction="#report_clicked" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="Report">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -54,7 +53,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button layoutX="263.0" layoutY="10.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="BackUp">
+                        <Button fx:id="btn_back_up_2" layoutX="263.0" layoutY="10.0" mnemonicParsing="false" onAction="#backup_clicked" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: transparent;" styleClass="menuItem" stylesheets="@style.css" text="BackUp">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -122,7 +121,7 @@
                <children>
                   <VBox layoutX="-12.0" layoutY="54.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="Dashboard" textFill="WHITE">
+                        <Button fx:id="btn_dashboard" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#dashboard_clicked" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="Dashboard" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
@@ -133,7 +132,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="ADD" textFill="WHITE">
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#add_clicked" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="ADD" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
@@ -144,7 +143,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="48.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="Report" textFill="WHITE">
+                        <Button fx:id="btn_report" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="48.0" mnemonicParsing="false" onAction="#report_clicked" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="Report" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
@@ -155,7 +154,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="BackUp" textFill="WHITE">
+                        <Button fx:id="btn_back_up" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#backup_clicked" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="BackUp" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
@@ -172,11 +171,7 @@
             </AnchorPane>
          </left>
          <center>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <StackPane layoutX="1.0" layoutY="1.0" prefHeight="334.0" prefWidth="422.0" />
-               </children>
-            </AnchorPane>
+            <BorderPane fx:id="screen" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </center>
       </BorderPane>
    </children>
