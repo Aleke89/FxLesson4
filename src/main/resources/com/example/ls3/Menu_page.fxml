@@ -165,6 +165,18 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
+                        <Button fx:id="btn_back_up1" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="125.0" mnemonicParsing="false" onAction="#listView_Clicked" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: transparent;" styleClass="sideBarItem" stylesheets="@style.css" text="ListView" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@big-data.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
                      </children>
                   </VBox>
                </children>

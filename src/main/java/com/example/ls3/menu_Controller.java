@@ -197,10 +197,23 @@ public class menu_Controller implements Initializable {
             e.printStackTrace();
         }
     }
-//        AnchorPane screen = root.load();
-//        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-//        window.setScene(scene);
-//        window.show();
+
+    public void listView_Clicked(ActionEvent event) {
+        TranslateTransition slide = new TranslateTransition();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("list.fxml"));
+        try {
+            Pane registerPane = fxmlLoader.load();
+            screen.getChildren().clear();
+            screen.getChildren().add(registerPane);
+
+            slide.setToX(0);
+            slide.play();
+            slider.setTranslateX(-176);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     }
 
 
